@@ -1,0 +1,31 @@
+@font-face {font-family: "iconfont";
+  src: url('iconfont.eot?t=1618575040570'); /* IE9 */
+  src: url('iconfont.eot?t=1618575040570#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAARsAAsAAAAACKgAAAQgAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDBgqFFIQpATYCJAMMCwgABCAFhG0HNBttB8gOJSHBwOBhACBEPPy3H+u+mUG1QRJvRJVE4pCIJEoQT+YlbGhb0m7a7KHpH8uplyIGWnYhKRLaAZTjEvEgMAIIDABeU1/bDi6n/1/pApsHlNPam6LHB4wDCmyMaYvizSWMDWM3kQe5mUCjfs5wy7HJ2UBNAXoFYp9OrQBqCaNSwQj1mtqCiUVcU1afLtMdAFx5v49fwDPUSGoyMHBrL6YahH/V/OSk2F61K6ZmHcPZoUwjYwJQiN1C5w7FIDlBUaOlVKourFWENFTkfwV4QlteC//wSIKoBZTNAmUklfiqiYWRyokXH7Xo4tS1QvozANHmqru92xSpn6CuftLSJJNlS57kzCzg16HpBeFu0umgud3ko+QYuTxP/ixfIsk9Nmg/jbfdL3OUZegjOdI7GBQsC4+K10SVOwQrwuPiVVET8ZEskyiSDUrs8Q8k6XhJew7hoTSDIJQOyZ2y5pxIxLnFXTvw9gJ7W8GNwVuOlLqjDnUcdiI9lmeRxLeHbjqQ1cXOtgfjBYIduyinZJQluSVJA9cUjRChaMKfdv+M3yWLlUjapTlD8iCxU87NhJNXT5930pR35PKu7SN1kMSaRz+RBRIvg/6CXIl3HfQwojaDOpeLN778LkSj98Pn7e0vDxQd/tgzwFZoaHgVG6f9vpqScpqCWJsGXYYiyKuEqDGPJF3xdCyD541OGZetePPGG7zAiNl53X+vIS58r8PxzkGSEATfGv9uXVj89O9biml+itnXf59isdbfvpF7eH4RdeHzWad+9PfrJcamVPY9n6vWjuSH8yO1pTOz7Ndkv3A/8mv27OzVv5lYOBapfXVWOYLbxqxX6Fn9PHS1wrtlwjxuIWTE4HDE4azILHoWg4GI7eBThf75pPRIkLrITo4KB+RNy9DjxbEUkxaruMPzq7jJD/aLDIuyWjDFv7K1vxBjaK8UHwDKAVS/81LG/wfptgLywd+wm9qfMxZlusF/1DQL+LK2dsGTNisF6iUai959qICq+uAEgDMXRUqVVYHsBvQcT2iEESrA2+lVd3cPENlDvSriIanTB1m9AbRQJqBGkymoVW8OGo2Lm96kC0pRlAaM6eEgtNsPSauPkLW7ixbKS6jR6yfUag9FaLQdhgs2GQq6RhQKV2BwNVTZANGruBwEWTANvzITptawKtC4xGPmwiifHoE8XN3TmTiYA6NDDOHXUj0xDIEQlMuGYrntYBaLC/FQLgOuwlxpGMYLdHNDiq7kWsVlAw1LULAKGFg1SKUGELoqXBwIrY3RyHw/E4yqBksFtALX4s0FQ/HRG4d4cOXeAI1TchrhLqU5Xy0qTxgMInZDoLjYILG8HcaCSS4Ir7gdA6wKxhWtQ5wnkJtAhDRVuk6vZt/fOmgEVsmRIkeRJ+vqlVwakUoAAA==') format('woff2'),
+  url('iconfont.woff?t=1618575040570') format('woff'),
+  url('iconfont.ttf?t=1618575040570') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('iconfont.svg?t=1618575040570#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+[class^="el-icon-pay"], [class*="el-icon-pay"]{
+  font-family: "iconfont" !important;
+  font-size: 24px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.el-icon-pay-wx:before {
+  content: "\e62b";
+}
+
+.el-icon-pay-zfb:before {
+  content: "\e60b";
+}
+

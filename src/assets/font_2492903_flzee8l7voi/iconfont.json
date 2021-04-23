@@ -1,0 +1,23 @@
+{
+  "id": "2492903",
+  "name": "no name",
+  "font_family": "iconfont",
+  "css_prefix_text": "el-icon-pay",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "813705",
+      "name": "微信",
+      "font_class": "-wx",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "7302534",
+      "name": "支付宝 账户",
+      "font_class": "-zfb",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    }
+  ]
+}

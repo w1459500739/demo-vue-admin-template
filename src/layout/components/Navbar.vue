@@ -5,9 +5,10 @@
     <breadcrumb class="breadcrumb-container" />
 
     <div class="right-menu">
+      欢迎{{userinfo.nickname}}
       <el-dropdown class="avatar-container" trigger="click">
         <div class="avatar-wrapper">
-          <img :src="avatar+'?imageView2/1/w/80/h/80'" class="user-avatar">
+          <img :src="userinfo.icon" class="user-avatar">
           <i class="el-icon-caret-bottom" />
         </div>
         <el-dropdown-menu slot="dropdown" class="user-dropdown">
@@ -35,11 +36,17 @@
 import { mapGetters } from 'vuex'
 import Breadcrumb from '@/components/Breadcrumb'
 import Hamburger from '@/components/Hamburger'
-
+import {clearAll,getUserInfo} from '@/utils/myAuth'
+import {findArticles} from '@/api/content/article'
 export default {
+  data(){
+    return{
+      userinfo:{}
+    }
+  },
   components: {
     Breadcrumb,
-    Hamburger
+    Hamburger,
   },
   computed: {
     ...mapGetters([
@@ -47,13 +54,17 @@ export default {
       'avatar'
     ])
   },
+  created(){
+    this.userinfo = getUserInfo()
+    
+  },
   methods: {
     toggleSideBar() {
       this.$store.dispatch('app/toggleSideBar')
     },
     async logout() {
-      await this.$store.dispatch('user/logout')
-      this.$router.push(`/login?redirect=${this.$route.fullPath}`)
+      clearAll()
+      this.$router.push(`/login`)
     }
   }
 }

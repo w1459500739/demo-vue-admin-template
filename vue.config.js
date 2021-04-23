@@ -13,8 +13,8 @@ const name = defaultSettings.title || 'vue Admin Template' // page title
 // For example, Mac: sudo npm run
 // You can change the port by the following methods:
 // port = 9528 npm run dev OR npm run dev --port = 9528
-const port = process.env.port || process.env.npm_config_port || 9528 // dev port
-
+const port = 9528 // dev port
+const host = defaultSettings.host
 // All configuration item explanations can be find in https://cli.vuejs.org/config/
 module.exports = {
   /**
@@ -36,7 +36,17 @@ module.exports = {
       warnings: false,
       errors: true
     },
-    before: require('./mock/mock-server.js')
+    proxy: {
+      // 配置代理 希望拦截当前的host地址 替换为目标地址
+      // key: {}   ;  key为拦截的规则,可以是正则表达式
+      '/(admin|lejuAdmin)': {
+          target: host, // 8080可以省略不写 所以代理地址和当前项目不是同一个地址!!
+          changeOrigin: true, // 如果是跨域 需要添加
+          pathRewrite: {
+              // ['/xxx']: '/yyy'
+          }
+      }
+  }
   },
   configureWebpack: {
     // provide the app's title in webpack's name field, so that
